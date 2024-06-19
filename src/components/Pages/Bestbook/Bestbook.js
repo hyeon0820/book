@@ -9,8 +9,10 @@ function Bestbook() {
       const todaybookAPI = async () => {
         try {
           const response = await axios.get('http://study.aiclub.kr:8007/book');
-          console.log("book", response);
+          console.log("bestbook", response);
+          if(response.data.book_time === "best"){
           setItem(response.data);
+          }
         } catch (error) {
           console.error("Error fetching books:", error);
         }
