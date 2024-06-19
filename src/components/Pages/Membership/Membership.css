@@ -1,0 +1,72 @@
+.membership_wrap {
+    width: 500px;
+    margin: 100px auto;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.membership_wrap p {
+    font-size: 2.5rem; /* 64px */
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.membership_form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.membership_form div {
+    margin-bottom: 20px;
+}
+
+.membership_form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1rem; /* 16px */
+    font-weight: bold;
+}
+
+.membership_form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem; /* 16px */
+}
+
+.membership_form .signbtn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5F7CC6;
+    color: white;
+    font-size: 1.1rem; /* 18px */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.membership_form .signbtn:hover {
+    background-color: #466da0;
+}
+
+.error_message {
+    color: #ff0000;
+    font-size: 0.9rem; /* 14px */
+    margin-top: 8px;
+}
+
+.login_ {
+    float: right;
+    margin-top: 10px;
+    font-size: 0.9rem; /* 14px */
+    color: grey;
+}

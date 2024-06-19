@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.todaybook-title{
+    font-size: 32px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 50px;
+    padding-left: 5%;
+}
+.book-item{
+    width: 200px;
+    height: 300px;
+    margin-right: 100px;
+}
+.book-location{
+    display: flex;
+}
+.book-information{
+    margin-right: 300px;
+    text-align: left;
+}
+.book-title{
+    font-size: 32px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+.book-writer{
+    font-size: 16px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+.book-desd{
+    margin-top: 70px;
+    font-size: 16px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+.book-buy{
+    width: 200px;
+    margin-top: 100px;
+}
+.book-btn1{
+    width: 100px;
+    height: 40px;
+    border: 1px solid #5F7CC6;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.book-btn1:hover{
+    background-color:  #5F7CC6;
+    color: white;
+}
+.book-btn2{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5F7CC6;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.book-price{
+    font-size: 16px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
