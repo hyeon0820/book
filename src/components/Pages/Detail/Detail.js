@@ -9,6 +9,7 @@ function Detail() {
 
   return (
     <div className="detail-location">
+      <h1 className='location'>BOOK</h1>
       <Nav />
       <div className="detail-container">
         <h1 className="detail-title">{book.book_title}</h1>

@@ -93,3 +93,6 @@
     box-shadow: none; /* 클릭 시 그림자 제거 */
   }
 
+  .location{
+    text-align: center;
+  }
