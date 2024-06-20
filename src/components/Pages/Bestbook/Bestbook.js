@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Bestbook.css';
+import Nav from '../../Nav/Nav';
+import { NavLink } from 'react-router-dom';
 
 function Bestbook() {
     const [item, setItem] = useState([]);
@@ -8,11 +10,9 @@ function Bestbook() {
     useEffect(() => {
       const todaybookAPI = async () => {
         try {
-          const response = await axios.get('http://study.aiclub.kr:8007/book');
+          const response = await axios.get('http://study.aiclub.kr:8007/bestbook');
           console.log("bestbook", response);
-          if(response.data.book_time === "best"){
           setItem(response.data);
-          }
         } catch (error) {
           console.error("Error fetching books:", error);
         }
@@ -38,11 +38,15 @@ function Bestbook() {
   
     
     return (
-        <div> 
+      <div className='allbook-location'> 
+          <h1 className='h1-location'>BOOK</h1>
+          <Nav />
+          <div className='title'>베스트 도서</div>
             {item.length > 0 ? (
             <ul className="book-list">
             {item.map((book, index) => (
                 <div key={index} className='book-location'>
+                  <NavLink to={`/detailbook/${book.book_id}`} state={book}>
                     <img src={book.book_img} alt={book.book_title} className='book-item' />
                     <div className='book-information'>
                     <div className='book-title'>{book.book_title}</div>
@@ -54,6 +58,7 @@ function Bestbook() {
                     <div className='book-btn1'>장바구니</div>
                     <div className='book-btn2'>구매하기</div>
                     </div>
+                    </NavLink>
                 </div>
             ))}
             </ul>

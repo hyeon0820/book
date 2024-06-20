@@ -44,7 +44,7 @@ function Membership() {
             <p>회원가입</p>
             <form onSubmit={handleSubmit} className='membership_form'>
                 <div className='input-box'>
-                    <div className='title'>이메일</div>
+                    <div className='sign_title'>이메일</div>
                     <input 
                         type="email" 
                         value={email}

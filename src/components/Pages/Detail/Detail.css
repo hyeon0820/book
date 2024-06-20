@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.detail-location {
+  margin: 100px auto;
+}
+
+.detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detail-title {
+  font-size: 32px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.detail-content {
+  display: flex;
+  align-items: center;
+}
+
+.detail-img {
+  width: 300px;
+  height: 500px;
+  margin-right: 50px;
+}
+
+.detail-info {
+  max-width: 600px;
+  text-align: left;
+}
+
+.detail-writer {
+  font-size: 18px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.detail-desd {
+  font-size: 16px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.detail-price {
+  font-size: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.detail-actions {
+  display: flex;
+  gap: 20px
+}
+
+.detail-btn1, .detail-btn2 {
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 600;
+}
+
+.detail-btn1 {
+  border: 1px solid #5F7CC6;
+}
+
+.detail-btn1:hover {
+  background-color: #5F7CC6;
+  color: white;
+}
+
+.detail-btn2 {
+    background-color: #5F7CC6;
+    color: white;
+    border: none;
+  }
+
+  .detail-btn2:active {
+    background-color: #4a5a9c; /* 클릭 시 배경색 약간 어둡게 */
+    box-shadow: none; /* 클릭 시 그림자 제거 */
+  }
+

@@ -10,6 +10,8 @@ import Bestbook from './components/Pages/Bestbook/Bestbook';
 import Newbook from './components/Pages/Newbook/Newbook';
 import Koreabook from './components/Pages/Koreabook/Koreabook';
 import Foreignbook from './components/Pages/Foreignbook/Foreignbook';
+import Detail from './components/Pages/Detail/Detail';
+import MyPage from './components/Pages/Mypage/Mypage';
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
           <Route path="/newbook" element={<Newbook />} />
           <Route path="/koreabook" element={<Koreabook />} />
           <Route path="/foreignbook" element={<Foreignbook />} />
+          <Route path="/detailbook/:id" element={<Detail />} />
+          <Route path="/mypage" element={<MyPage />} />
         </Routes>
         <Footer />
       </Router>

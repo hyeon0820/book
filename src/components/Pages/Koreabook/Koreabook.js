@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Koreabook.css';
+import Nav from '../../Nav/Nav';
+import { NavLink } from 'react-router-dom';
 
 function Koreabook() {
     const [item, setItem] = useState([]);
@@ -8,7 +10,7 @@ function Koreabook() {
     useEffect(() => {
       const todaybookAPI = async () => {
         try {
-          const response = await axios.get('http://study.aiclub.kr:8007/book');
+          const response = await axios.get('http://study.aiclub.kr:8007/koreabook');
           console.log("book", response);
           setItem(response.data);
         } catch (error) {
@@ -36,11 +38,15 @@ function Koreabook() {
   
     
     return (
-        <div> 
+      <div className='allbook-location'> 
+        <h1 className='h1-location'>BOOK</h1>
+        <Nav />
+        <div className='title'>국내 도서</div>
             {item.length > 0 ? (
             <ul className="book-list">
             {item.map((book, index) => (
                 <div key={index} className='book-location'>
+                  <NavLink to={`/detailbook/${book.book_id}`} state={book}>
                     <img src={book.book_img} alt={book.book_title} className='book-item' />
                     <div className='book-information'>
                     <div className='book-title'>{book.book_title}</div>
@@ -52,6 +58,7 @@ function Koreabook() {
                     <div className='book-btn1'>장바구니</div>
                     <div className='book-btn2'>구매하기</div>
                     </div>
+                    </NavLink>
                 </div>
             ))}
             </ul>

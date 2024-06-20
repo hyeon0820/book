@@ -3,6 +3,7 @@ import './Main.css';
 import { BsCart2, BsPerson } from "react-icons/bs";
 import Nav from "../../Nav/Nav";
 import Todaybook from '../Todaybook/Todaybook';
+import { NavLink } from 'react-router-dom';
 
 function Main() {
   return (
@@ -16,9 +17,11 @@ function Main() {
         <div>
           <BsCart2 size={45} className='icon' />
         </div>
+        <NavLink to={'../mypage'}>
         <div>
           <BsPerson size={45} className='icon' />
         </div>
+        </NavLink>
       </div>
       <div>
         <Nav />

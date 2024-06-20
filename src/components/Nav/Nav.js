@@ -8,19 +8,19 @@ function Nav() {
     return (
         <div> 
             <div className='nav_location'>
-                <NavLink to={'./allbook'} style={{ textDecoration: "none"}}>
+                <NavLink to={'../allbook'} style={{ textDecoration: "none"}}>
                 <div className='all'>전체도서</div>
                 </NavLink>
-                <NavLink to={'./bestbook'} style={{ textDecoration: "none"}}>
+                <NavLink to={'../bestbook'} style={{ textDecoration: "none"}}>
                 <div className='best'>베스트도서</div>
                 </NavLink>
-                <NavLink to={'./bestbook'} style={{ textDecoration: "none"}}>
+                <NavLink to={'../newbook'} style={{ textDecoration: "none"}}>
                 <div className='new'>신작도서</div>
                 </NavLink>
-                <NavLink to={'./bestbook'} style={{ textDecoration: "none"}}>
+                <NavLink to={'../koreabook'} style={{ textDecoration: "none"}}>
                 <div className='korea'>국내도서</div>
                 </NavLink>
-                <NavLink to={'./bestbook'} style={{ textDecoration: "none"}}>
+                <NavLink to={'../foreignbook'} style={{ textDecoration: "none"}}>
                 <div className='abroad'>해외도서</div>
                 </NavLink>
             </div>
