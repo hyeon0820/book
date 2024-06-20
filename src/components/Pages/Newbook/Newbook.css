@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.allbook-location {
+    margin: 100px auto;
+}
+
+.todaybook-title {
+    font-size: 32px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 50px;
+    padding-left: 5%;
+}
+
+.h1-location {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.book-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book-item {
+    width: 200px;
+    height: 300px;
+    margin-right: 20px; /* 수정 */
+}
+
+.book-location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    text-decoration: none;
+}
+
+.book-location a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.book-information {
+    margin-right: 20px; /* 수정 */
+    text-align: left;
+}
+
+.book-title {
+    font-size: 32px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.book-writer {
+    font-size: 16px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.book-desd {
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.book-buy {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin-top: 0; /* 수정 */
+}
+
+.book-btn1 {
+    width: 100px;
+    height: 40px;
+    border: 1px solid #5F7CC6;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.book-btn1:hover {
+    background-color: #5F7CC6;
+    color: white;
+}
+
+.book-btn2 {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5F7CC6;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.book-price {
+    font-size: 16px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.title {
+    font-size: 32px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 40px;
+    margin-left: 270px;
+}

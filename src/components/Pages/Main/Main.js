@@ -6,6 +6,7 @@ import Todaybook from '../Todaybook/Todaybook';
 import { NavLink } from 'react-router-dom';
 
 function Main() {
+  
   return (
     <div className='main_wrap'>
       <div className='top-section'>

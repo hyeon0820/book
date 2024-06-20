@@ -53,12 +53,13 @@ function Bestbook() {
                     <div className='book-writer'>{book.book_writer}</div>
                     <div className='book-desd'>{truncateText(book.book_desd, 50)}</div>
                     </div>
+                    </NavLink>
                     <div className='book-buy'>
                     <div className='book-price'>{formatPrice(book.book_price)}</div>
                     <div className='book-btn1'>장바구니</div>
                     <div className='book-btn2'>구매하기</div>
                     </div>
-                    </NavLink>
+                    
                 </div>
             ))}
             </ul>
